@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Links</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #020617;
+      --accent: #22d3ee;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(160deg, #020617, #0f172a);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 24px;
+    }
+
+    .card {
+      background: rgba(2, 6, 23, 0.85);
+      border-radius: 20px;
+      padding: 32px 24px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      
+      text-align: center;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin: 0 0 6px;
+    }
+
+    .bio {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .link {
+      display: block;
+      padding: 14px 16px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      background: linear-gradient(135deg, #020617, #020617) padding-box,
+        linear-gradient(135deg, var(--accent), #38bdf8) border-box;
+      border: 1px solid transparent;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(34, 211, 238, 0.25);
+    }
+
+    footer {
+      margin-top: 18px;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="E:\WORK\Contacts site\Photo id.png" alt="Avatar" class="avatar" />
+      <h1>Samy SAFFAR BATTI</h1>
+      <p class="bio">Etudiant en licence IA</p>
+
+      <div class="links">
+        <a class="link" href="tel:+33612345678">📞 Call Me</a>
+        <a class="link" href="https://github.com" target="_blank">GitHub</a>
+        <a class="link" href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a class="link" href="mailto:samysaffarbatti@gmail.com">Email Me</a>
+      </div>
+
+      <footer>© 2025 Your Name</footer>
+    </div>
+  </div>
+</body>
+</html>
